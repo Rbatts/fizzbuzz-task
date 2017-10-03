@@ -10,35 +10,40 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            for (var i = 1; i <= 100; i = i + 1)
+            for (var i = 1; i <= 255; i = i + 1)
             {
-                if  (i % 11 == 0)
+                string values = "";
+                if (i % 3 == 0)
                 {
-                    Console.WriteLine("Bong");
+                    values = values + "Fizz";
                 }
-                else if (i % 21 == 0)
+                if (i % 11 == 0)
                 {
-                    Console.WriteLine("FizzBang");
+                    values = "Bong";
                 }
-                else if (i % 7 == 0) 
+                if (i % 13 == 0)
                 {
-                    Console.WriteLine("Bang");
+                    values = values + "Fezz";
                 }
-                else if (i % 15 == 0)
+                if (i % 5 == 0)
                 {
-                    Console.WriteLine("FizzBuzz");
+                    values = values + "Buzz";
                 }
-                else if (i % 3 == 0)
+                if (i % 7 == 0)
                 {
-                    Console.WriteLine("Fizz");
+                    values = values + "Bang";
                 }
-                else if (i % 5 == 0)
+                if (i % 17 == 0)
                 {
-                    Console.WriteLine("Buzz");
+                    
+                }
+                if (values == "")
+                {
+                    Console.WriteLine(i);
                 }
                 else
                 {
-                    Console.WriteLine(i);
+                    Console.WriteLine(values);
                 }
             }
             Console.ReadLine();
