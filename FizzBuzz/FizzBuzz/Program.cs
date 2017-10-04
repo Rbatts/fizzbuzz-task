@@ -33,10 +33,6 @@ namespace ConsoleApp1
                 {
                     values = values + "Bang";
                 }
-                if (i % 17 == 0)
-                {
-                    
-                }
                 if (values == "")
                 {
                     Console.WriteLine(i);
