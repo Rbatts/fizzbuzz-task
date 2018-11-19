@@ -28,3 +28,8 @@
 * not as much though
 
 ---
+
+```C#
+Console.WriteLine();
+Console.ReadLine();
+```
